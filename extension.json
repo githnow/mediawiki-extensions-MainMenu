@@ -1,0 +1,43 @@
+{
+    "name": "Main Menu",
+    "author": "Bot Dev",
+    "version": "1.0.0",
+    "url": "https://www.salebot.wiki",
+    "descriptionmsg": "mainmenu-desc",
+    "license-name": "MIT",
+    "type": "extension",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
+	"MessagesDirs": {
+		"MainMenu": [
+			"i18n"
+		]
+	},
+    "AutoloadClasses": {
+        "MainMenuHooks": "includes/MainMenu.hooks.php"
+    },
+    "Hooks": {
+        "BeforePageDisplay": [
+            "MainMenuHooks::onBeforePageDisplay"
+        ]
+    },
+	"ResourceFileModulePaths": {
+		"localBasePath": "modules",
+		"remoteExtPath": "MainMenu/modules"
+	},
+	"ResourceModules": {
+		"ext.MainMenu": {	
+			"localBasePath": "modules/ext.MainMenu",
+			"remoteExtPath": "MainMenu/modules/ext.MainMenu",
+			"scripts": [
+				"ext.MainMenu.js"
+			],
+			"styles": [
+				"ext.MainMenu.css",
+				"ext.custom.css"
+			]
+		}
+	},
+    "manifest_version": 2
+}

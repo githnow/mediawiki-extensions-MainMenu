@@ -1,0 +1,41 @@
+/* ==== CUSTOM ============================================== */
+.navbar-item.is-mega {
+	position: static;
+	.is-mega-menu-title {
+		margin-bottom: 0;
+		padding: .375rem 1rem;
+	}
+}
+.navbar-end {
+	display: flex;
+	margin-right: 25%;
+}
+.navbar-start {
+	margin-left: 2%;
+	background: transparent;
+}
+div#navMenubd-example {
+	/*background: transparent;*/
+}
+nav.navbar {
+	background: transparent;
+	height: 2.45rem;
+	width: 90%;
+}
+.nav-mainmenu {
+	background-color: white;
+	display: block !important;
+}
+.navbar-dropdown {
+	min-width: 80%;
+}
+.container.is-fluid {
+	width: 90%;
+}
+.navbar-brand {
+	min-width: 136px;
+}
+.navbar-burger {
+	height: 2.95rem;
+	margin: auto;
+}

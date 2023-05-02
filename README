@@ -1,0 +1,38 @@
+MainMenu Extension for MediaWiki.
+==Intro==
+The MainMenu extension adds a responsive main menu to your MediaWiki site,
+using the Bulma.io CSS framework. This allows you to easily add links to
+your most important pages and improve site navigation for your users.
+
+==Author==
+MainMenu was written for salebot.wiki
+
+==Installation==
+To install the MainMenu extension, follow these steps:
+
+1. Download the latest release from the Github repository.
+https://github.com/githnow
+
+2. Extract the files and copy the MainMenu directory to your MediaWiki
+extensions directory.
+
+3. Add the following line to your LocalSettings.php file:
+wfLoadExtension( 'MainMenu' );
+
+4. Navigate to your wiki's "Special:Version" page to verify that
+the extension was successfully installed.
+
+==Usage==
+To add links to your main menu, you will need to edit
+the ext.menu.config.php file in the MainMenu\includes directory.
+You can add links to the file, following the special format.
+
+You can customize the menu appearance by editing the ext.custom.css file
+in the modules\ext.MainMenu\ directory.
+
+==Credits==
+The MainMenu extension was developed by githnow,
+based on the Bulma.io CSS framework.
+
+==License==
+The MainMenu extension is released under the MIT License.
