@@ -1,4 +1,5 @@
 MainMenu Extension for MediaWiki.
+
 ==Intro==
 The MainMenu extension adds a responsive main menu to your MediaWiki site,
 using the Bulma.io CSS framework. This allows you to easily add links to
