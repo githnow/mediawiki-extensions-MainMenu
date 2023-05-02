@@ -12,7 +12,7 @@ MainMenu was written for salebot.wiki
 To install the MainMenu extension, follow these steps:
 
 1. Download the latest release from the Github repository.
-https://github.com/githnow
+https://github.com/githnow/mediawiki-extensions-MainMenu
 
 2. Extract the files and copy the MainMenu directory to your MediaWiki
 extensions directory.
