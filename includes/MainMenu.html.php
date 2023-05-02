@@ -1,3 +1,5 @@
+<!--noindex-->
+<div class="robots-noindex">
 <nav class="navbar ">
   <div class="navbar-brand">
 	<?php if (!empty($mmHeaderIcon)) {
@@ -14,9 +16,16 @@
   <div id="navMenubd-example" class="navbar-menu">
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link  is-active" href="<?php echo $mmH1MenuItemLink;?>">
-          <?php echo $mmH1MenuItem;?>
-        </a>
+	  <?php
+		$navlink = '<a class="navbar-link  is-active"';
+		if (!empty($mmH1MenuItemLink)) {
+		  echo $navlink . ' href="' . $mmH1MenuItemLink. '">';
+		  } else {
+		  echo $navlink . '>';
+		}
+		echo $mmH1MenuItem;
+		echo '</a>';
+	  ?>
         <div class="navbar-dropdown ">
 		<?php
 			for ($i = 1;$i <= 12;$i++) {
@@ -35,16 +44,22 @@
           <div class="navbar-item">
             <div>
               <p class="is-size-6-desktop">
-                <strong class="has-text-info"><?php echo $mmHasTextInfo;?></strong>
+				<?php
+					echo '<strong class="has-text-info">' . $mmHasText;
+					if ($isAuthUser) { echo $mmHasHiddenInfoAU; }
+					echo '</strong>';
+					if (!$isAuthUser) { echo '<small>' . $mmHasHiddenInfoNA . '</small>'; }
+				?>
               </p>
               <small>
-                 <?php if (!empty($mmHasText)) {
-						if (!empty($mmHasTextLink)) {
-							echo '<a class="bd-view-all-versions" href="' . $mmHasTextLink . '">' . $mmHasText . '</a>';
-							} else {
-							echo $mmHasText;
-						}
-					}?>
+				<?php 
+				if (!empty($mmHasTextInfo)) {
+					if (!empty($mmHasTextLink)) {
+						echo '<a class="bd-view-all-versions" href="' . $mmHasTextLink . '">' . $mmHasTextInfo . '</a>';
+						} else {
+						echo $mmHasTextInfo;
+					}
+				}?>
               </small>
             </div>
           </div>
@@ -186,3 +201,5 @@ for ($i = 1;$i <= 10;$i++) {
     <div class="navbar-end"></div>
   </div>
 </nav>
+</div>
+<!--/noindex-->

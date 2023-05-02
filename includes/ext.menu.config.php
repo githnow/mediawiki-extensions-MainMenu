@@ -14,9 +14,12 @@
 	$mm_h1i7 = "";	$mm_h1i7_link = "";
 	$mm_h1i8 = "";	$mm_h1i8_link = "";
 	// max to 12 items there
-	$mm_h1items_active = [1,2,5,9];							// set color `is-active` class
-	$mmHasTextInfo = "Short_Tag";							// tag inside the first menu
-	$mmHasText = "Text_to_short";	$mmHasTextLink = "";	// description & link for the tag
+	$mm_h1items_active = [1,2,5,9];					// set color `is-active` class
+	$mmHasText			= "Short_Text";				// tag inside the first menu
+	 $mmHasHiddenInfoNA	= "You`re not logged in";	// short text for non-users
+	 $mmHasHiddenInfoAU	= "Hello user!";			// short text for user
+	 $mmHasTextInfo		= "Description";			// description with link
+	 $mmHasTextLink		= "";						// description & link for the tag
 /* START MENU 2 */
   $mmH2MenuItemMega = "SecondMenu";			// Menu caption (if empty no one)
   $mmH2MenuItemMegaTag = "Tag";				// tag in menu

@@ -1,9 +1,14 @@
 <?php
+use MediaWiki\Session\SessionManager;
+
 class MainMenuHooks {
 	public static function onBeforeHtmlAddedToOutput( $resourceLoader ) {
 	}
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 		global $wgExtensionAssetsPath, $wgRequest;
+		$session = SessionManager::getGlobalSession();
+		$user 	 = $session->getUser();
+		$isAuthUser = $user->isRegistered();
 		if ($wgRequest->getVal('action') != 'edit') {
 			include "ext.menu.config.php";
 			echo '<div class="nav-mainmenu" style="display: table-column;">';
