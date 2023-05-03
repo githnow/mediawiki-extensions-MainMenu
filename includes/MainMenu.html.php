@@ -122,9 +122,9 @@
 	echo '</div><div class="level-right">';
 	if (!empty($mmH2MenuItemMegaButton)) {
 		echo '<div class="level-item">
-                    <a class="button bd-is-rss is-small" href="' . $mmH2MenuItemMegaButtonLink . '">
+                    <a class="button is-small" href="' . $mmH2MenuItemMegaButtonLink . '">
                       <span class="icon is-small">
-                        <i class="fa fa-rss"></i>
+                        <i class="fa fa-file-import fa-lg" style="color:#db1b1b;"></i>
                       </span>
                       <span>' . $mmH2MenuItemMegaButton . '</span>
                     </a>
@@ -170,7 +170,7 @@ if (!empty($mmH3MenuItemExt)) {
 				  <div class="level-right">
 					<div class="level-item">
 					  <span class="icon has-text-info">
-						<i class="fa fa-plug">' . $$h3mitem_icon . '</i>
+						<i class="fa fa-none">' . $$h3mitem_icon . '</i>
 					  </span>
 					</div>
 				  </div>

@@ -35,7 +35,8 @@
 			],
 			"styles": [
 				"ext.MainMenu.css",
-				"ext.custom.css"
+				"ext.custom.css",
+				"ext.fonts.min.css"
 			]
 		}
 	},
