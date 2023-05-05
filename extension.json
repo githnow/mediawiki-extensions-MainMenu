@@ -1,8 +1,9 @@
 {
     "name": "Main Menu",
-    "author": "Bot Dev",
-    "version": "1.0.0",
-    "url": "https://www.salebot.wiki",
+    "author": [
+		"[https://www.salebot.wiki/page/User:BotDev.One Bot Dev] <salebot.wiki>"],
+    "version": "1.0.1",
+    "url": "https://github.com/githnow/mediawiki-extensions-MainMenu",
     "descriptionmsg": "mainmenu-desc",
     "license-name": "MIT",
     "type": "extension",

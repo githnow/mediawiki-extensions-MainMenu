@@ -89,13 +89,9 @@ button {
 }
 
 *,::after,::before {
-    box-sizing: inherit;
+   /*1 box-sizing: inherit; */
 }
 
-img {
-    height: auto;
-    max-width: 100%
-}
 
 button {
     /* font-family:BlinkMacSystemFont,-apple-system,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif; */
@@ -121,11 +117,6 @@ hr {
     display: block;
     height: 2px;
     margin: 1.5rem 0
-}
-
-img {
-    height: auto;
-    max-width: 100%
 }
 
 small {
@@ -762,7 +753,7 @@ a.tag:hover {
 }
 
 .navbar-menu {
-    display: none
+    display: none;
 }
 
 .navbar-item,.navbar-link {
