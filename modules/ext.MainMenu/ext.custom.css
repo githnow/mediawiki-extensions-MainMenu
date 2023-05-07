@@ -39,3 +39,13 @@ nav.navbar {
 	height: 2.95rem;
 	margin: auto;
 }
+
+/* ======= Editor Correction ================== */
+.wikiEditor-ui-toolbar .tabs,
+.wikiEditor-ui-toolbar .section-main
+{
+	height: auto !important;
+}
+.wikiEditor-ui-toolbar {
+	height: fit-content;
+}
