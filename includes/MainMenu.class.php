@@ -59,7 +59,7 @@ class MainMenuHooks {
 	#SkinAfterContent
 		global $wgOut, $isAuthUser;
 		$data .= self::ConsoleLog("MainMenu.config.php Loading");
-		require_once __DIR__ . '\..\MainMenu.config.php';
+		require_once __DIR__ . '/../MainMenu.config.php';
 		$data .= self::ConsoleLog("MainMenu.config.php OK");
 		if ( $skin->getSkinName() == 'vector' ) {
 			$wgOut->addModuleStyles( 'ext.MainMenu' );
