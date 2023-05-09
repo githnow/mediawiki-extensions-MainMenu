@@ -1,3 +1,4 @@
 {
-	"mainmenu-desc": "Главное меню для wiki на основе bulma.io css"
+	"mainmenu": "Меню",
+	"mainmenu-desc": "Главное меню для mediawiki на основе bulma.io css (Vector)"
 }

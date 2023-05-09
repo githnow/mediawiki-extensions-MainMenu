@@ -1,4 +1,10 @@
 $(function () {
+	var mmContainer = document.getElementById('exmainmenu');
+	var mmHeadId 	= document.getElementById('mw-head');
+		if (mmContainer && mmHeadId) {
+		mmHeadId.insertBefore(mmContainer, mmHeadId.firstChild);
+		mmContainer.style.display = 'block';
+	}
 	const mainmenu = document.querySelector('.nav-mainmenu');
 	if (mainmenu) {
 		mainmenu.style.display = 'block';

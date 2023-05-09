@@ -1,45 +1,55 @@
 {
     "name": "Main Menu",
     "author": [
-		"[https://www.salebot.wiki/page/User:BotDev.One Bot Dev] <salebot.wiki>"],
-    "version": "1.0.1",
+        "[https://www.salebot.wiki/page/User:BotDev.One Bot Dev] <salebot.wiki>"],
+    "version": "2.0.0",
     "url": "https://github.com/githnow/mediawiki-extensions-MainMenu",
     "descriptionmsg": "mainmenu-desc",
     "license-name": "MIT",
     "type": "extension",
-	"requires": {
-		"MediaWiki": ">= 1.29.0"
-	},
-	"MessagesDirs": {
-		"MainMenu": [
-			"i18n"
-		]
-	},
-    "AutoloadClasses": {
-        "MainMenuHooks": "includes/MainMenu.hooks.php"
+    "requires": {
+        "MediaWiki": ">= 1.35.0"
     },
-    "Hooks": {
-        "BeforePageDisplay": [
-            "MainMenuHooks::onBeforePageDisplay"
+    "MessagesDirs": {
+        "MainMenu": [
+            "i18n"
         ]
     },
-	"ResourceFileModulePaths": {
-		"localBasePath": "modules",
-		"remoteExtPath": "MainMenu/modules"
-	},
-	"ResourceModules": {
-		"ext.MainMenu": {	
-			"localBasePath": "modules/ext.MainMenu",
-			"remoteExtPath": "MainMenu/modules/ext.MainMenu",
-			"scripts": [
-				"ext.MainMenu.js"
-			],
-			"styles": [
-				"ext.MainMenu.css",
-				"ext.custom.css",
-				"ext.fonts.min.css"
-			]
-		}
-	},
+    "AutoloadClasses": {
+        "MainMenuConfig": "MainMenu.config.php",
+        "MainMenuHooks": "includes/MainMenu.class.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "MainMenuHooks::MainMenuOnPage"
+        ],
+        "SkinBuildSidebar": [
+            "MainMenuHooks::AddInSidebar"
+        ],
+        "BeforePageDisplay": [
+            "MainMenuHooks::onBeforePageDisplay"
+        ],
+        "SkinAfterContent": [
+            "MainMenuHooks::InjectInSidebar"
+        ]
+    },
+    "ResourceFileModulePaths": {
+        "localBasePath": "modules",
+        "remoteExtPath": "MainMenu/modules"
+    },
+    "ResourceModules": {
+        "ext.MainMenu": {    
+            "localBasePath": "modules/ext.MainMenu",
+            "remoteExtPath": "MainMenu/modules/ext.MainMenu",
+            "scripts": [
+                "ext.MainMenu.js"
+            ],
+            "styles": [
+                "ext.MainMenu.css",
+                "ext.custom.css",
+                "ext.fonts.min.css"
+            ]
+        }
+    },
     "manifest_version": 2
 }

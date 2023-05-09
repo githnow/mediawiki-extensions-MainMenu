@@ -1,4 +1,9 @@
 /* ==== MAIN ============================================== */
+#exmainmenu {
+    position: absolute;
+    width: 70%;
+    left: calc(.5em + 10px);
+}
 /* ==== NAVIGATE ========================================== */
 @-webkit-keyframes spinAround {
     from {
